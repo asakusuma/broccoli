@@ -276,6 +276,7 @@ export = function broccoliCLI(args: string[], ui = new UI()) {
             ui.writeError(e);
             process.exitCode = 1;
           }
+          process.exit(process.exitCode);
         }
       })();
     });
